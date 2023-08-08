@@ -35,10 +35,10 @@ contract WavePortal {
         /*
          * 現在ユーザーがwaveを送信している時刻と、前回waveを送信した時刻が15分以上離れていることを確認。
          */
-        // require(
-            // lastWavedAt[msg.sender] + 15 minutes < block.timestamp,
-            // "Wait 15m"
-        // );
+        //  require(
+            //  lastWavedAt[msg.sender] + 30 seconds  < block.timestamp,
+            //  "Wait 30sec"
+        //  );
 
         /*
          * ユーザーの現在のタイムスタンプを更新する
@@ -58,7 +58,7 @@ contract WavePortal {
         if (seed <= 50) {
             console.log("%s won!", msg.sender);
 
-            uint256 prizeAmount = 0.0001 ether;
+            uint256 prizeAmount = 0.00006 ether;
             require(
                 prizeAmount <= address(this).balance,
                 "Trying to withdraw more money than they contract has."

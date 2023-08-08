@@ -10,7 +10,7 @@ describe('Wave Contract', function() {
      * デプロイする際0.1ETHをコントラクトに提供する
      */
     const waveContract = await waveContractFactory.deploy({
-      value: hre.ethers.utils.parseEther('0.1'),
+      value: hre.ethers.utils.parseEther('0.0006'),
     });
     await waveContract.deployed();
     /*

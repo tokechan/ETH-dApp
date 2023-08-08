@@ -8,7 +8,7 @@ const main = async () => {
   const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
   /* コントラクトに資金を提供できるようにする */
   const waveContract = await waveContractFactory.deploy({
-    value: hre.ethers.utils.parseEther("0.006"),
+    value: hre.ethers.utils.parseEther("0.01"),
   });
 
   await waveContract.deployed();
