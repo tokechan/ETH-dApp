@@ -4,7 +4,7 @@ const main = async () => {
      * 0.1ETHをコントラクトに提供してデプロイする
      */
     const waveContract = await waveContractFactory.deploy({
-      value: hre.ethers.utils.parseEther("0.006"),
+      value: hre.ethers.utils.parseEther("0.01"),
     });
     await waveContract.deployed();
     console.log("Contract deployed to:", waveContract.address);
