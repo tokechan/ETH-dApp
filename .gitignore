@@ -2,3 +2,13 @@ node_modules/
 
 .DS_Store
 
+# yarn
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+**/yarn-error.log*
+
+# dependencies
+**/node_modules
+# misc
+**/.DS_Store
